@@ -49,6 +49,7 @@
             this.ConvertTextButton.TabIndex = 1;
             this.ConvertTextButton.Text = "Convert";
             this.ConvertTextButton.UseVisualStyleBackColor = true;
+            this.ConvertTextButton.Click += new System.EventHandler(this.ConvertTextButton_Click);
             // 
             // OutputTextBox
             // 

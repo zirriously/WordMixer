@@ -16,5 +16,13 @@ namespace WordMixer
         {
             InitializeComponent();
         }
+
+        private WordMixer wm = new WordMixer();
+
+        private void ConvertTextButton_Click(object sender, EventArgs e)
+        {
+            wm.MixWords(InputTextBox.Text);
+            OutputTextBox.Text = wm.Output;
+        }
     }
 }
