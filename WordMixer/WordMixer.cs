@@ -26,12 +26,17 @@ namespace WordMixer
             // Randomisation of each word, keeping first and last letter the same
             foreach (string value in _inputList)
             {
-                Char firstChar = value[0];
+                Char firstChar = value[1];
                 Char lastChar = value[value.Length - 1];
+
+                // Debugging
+                Console.WriteLine(value[0]);
+                Console.WriteLine(value[1]);
+                Console.WriteLine(value[value.Length - 1]);
 
                 for (int i = 1; i < value.Length -1; i++)
                 {
-                    
+                    Console.WriteLine(value[i]);
                 }
             }
 
